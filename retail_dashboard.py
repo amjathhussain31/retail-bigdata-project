@@ -10,7 +10,7 @@ st.set_page_config(
     page_icon="🛒"
 )
 
-OUTPUT_DIR = os.path.expanduser("~/retail_outputs/")
+OUTPUT_DIR = os.path.dirname(os.path.abspath(__file__))
 
 @st.cache_data
 def load(filename):
